@@ -1,0 +1,4 @@
+pushstatus£¨{},"",url#var£©
+window.onpopstatus = function(){
+	xx
+}
