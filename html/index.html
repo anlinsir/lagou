@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>index</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+<body>
+		<nav class="navbar navbar-default navbar-inverse">
+  			<div class="container-fluid">
+    		<div class="navbar-header">
+    
+      			<a class="navbar-brand" href="#">拉钩管理系统</a>
+    		</div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="javascript:void(0)">首页 <span class="sr-only">(current)</span></a></li>
+        <li class="tage"><a>职位管理</a></li>
+
+      </ul>     
+      <ul class="nav navbar-nav navbar-right">
+        <li><a data-toggle="modal" data-target="#login" class="login">登录</a></li>
+        <li><a style="display: none;" class="mypage">Welcome : <span class="my_page"></span></a></li>        
+        <li><a data-toggle="modal" data-target="#myModal" class="register">注册</a></li>
+        <li><a style="display: none;" class="logout">退出</a></li>      
+
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+	
+	<p class="bg-success pp">欢迎：<span class="welcome"></span> <span class="times"></span></p>
+
+	<!-- <div class="" style="display: none;"><a>添加职位</a></div> -->
+
+
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+				<h4 class="modal-title" id="myModalLabel">
+					register
+				</h4>
+			</div>
+			<div class="modal-body">
+				<section>
+					<h2 class="text-center">Register</h2><br>
+		<form>
+			  <div class="form-group">
+			    <label for="exampleInputEmail1">Username</label>
+			    <input type="text" class="form-control username" placeholder="Username">
+			  </div>
+			  <p class="up p bg-danger">1</p>
+			  <div class="form-group">
+			    <label for="exampleInputPassword1">Password</label>
+			    <input type="password" class="form-control password" placeholder="Password">
+			  </div>
+			  <p class="ppp p bg-danger">2</p>
+			  <div class="form-group">
+			    <label for="exampleInputPassword1">Password Aegin</label>
+			    <input type="password" class="form-control password1"  placeholder="Password">
+			  </div>
+			  <p class="p1p p bg-danger">3</p>
+			  <div class="form-group">
+			    <label for="exampleInputPassword1">Email</label>
+			    <input type="email" class="form-control Email" placeholder="Email">
+			  </div>		 
+			  <p class="ep p bg-danger">4</p>
+			  <a href="javascript:void(0)" class="btn btn-info btn-block registertrue">Register</a>
+		</form>
+	</section>
+
+			</div>
+
+			<div class="modal-footer">
+				<button type="button" class="btn btn-block btn-default colse_true" data-dismiss="modal">close
+				</button>
+				<button style="display: none;" type="button" class="btn btn-success">
+					注册
+				</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
+
+
+<!--login -->
+
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+				<h4 class="modal-title" id="myModalLabel">
+					login
+				</h4>
+			</div>
+			<div class="modal-body">
+				<section>
+					<h2 class="text-center">Login</h2><br>
+		<form>
+			  <div class="form-group">
+			    <label for="exampleInputEmail1">Username</label>
+			    <input type="text" class="form-control login_username" placeholder="Username">
+			  </div>
+			  <p class="up p bg-danger">1</p>
+			  <div class="form-group">
+			    <label for="exampleInputPassword1">Password</label>
+			    <input type="password" class="form-control login_password" placeholder="Password">
+			  </div>
+			  <p class="ppp p bg-danger">2</p>
+			
+			  <a href="javascript:void(0)" class="btn btn-info btn-block logintrue">Login</a>
+		</form>
+	</section>
+
+			</div>
+
+			<div class="modal-footer">
+				<button type="button" class="btn btn-block btn-default colse_true" data-dismiss="modal">close
+				</button>
+				<button style="display: none;" type="button" class="btn btn-success">
+					注册
+				</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
+
+
+
+
+
+
+
+
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="bootstrap.min.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>

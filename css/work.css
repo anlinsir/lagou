@@ -1,0 +1,15 @@
+.pagination {
+	display: flex;
+	    justify-content: center;
+}
+
+.pagination li a{
+		background-color: none;
+}
+.pagination li{
+		background-color: none;
+}
+.pagination li>a:hover{		
+		background-color: #222;
+		color: white;
+}

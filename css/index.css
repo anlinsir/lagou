@@ -1,0 +1,23 @@
+.pp{
+	height: 50px;
+	width: 80%;
+	margin: 0 auto;
+	line-height: 50px;
+}
+.p{
+	height: 30px;
+	width: 80%;
+	margin: 0 auto;
+	line-height: 30px;
+	text-align: center;
+	display: none;
+
+}
+.success_p{
+	width: 300px;
+	height: 100px;
+	font-size: 25px;
+	text-align: center;
+	line-height: 100px;
+	margin: 0 auto;
+}

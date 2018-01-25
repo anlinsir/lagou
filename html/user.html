@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>user</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+
+</head>
+<body>
+	
+	<nav class="navbar navbar-default navbar-inverse">
+  			<div class="container-fluid">
+    		<div class="navbar-header">
+    
+      			<a class="navbar-brand" href="#">拉钩管理系统</a>
+    		</div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="/index.html">首页 </a></li>
+        <li><a href="/work.html">职位管理</a></li>
+
+      </ul>     
+      <ul class="nav navbar-nav navbar-right">
+        <li><a style="display: none;" data-toggle="modal" data-target="#login" class="login">登录</a></li>
+        <li class="active"><a class="mypage">Welcome : <span class="my_page"></span></a>  <span class="sr-only">(current)</span></li>        
+        <li><a style="display: none;" data-toggle="modal" data-target="#myModal" class="register">注册</a></li>
+        <li><a class="logout">退出</a></li>      
+
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+	<div class="contianer">
+		<div class="col-md-6 col-md-offset-3 well">
+			<button type="button" class="btn btn-warning btn-lg btn-block vip">manage</button>
+		</div>
+	</div>
+
+
+
+	
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="bootstrap.min.js"></script>
+	<script type="text/javascript">
+	var name = location.search.split("=")[1]
+	$(".my_page").html(name)
+	$(".vip").on("click",function(){
+		var vip = $(".my_page").html().trim()
+		var vip_ = "vip_";
+		$.post("/vip/user",{username:vip,isvip:vip_+vip},function(data){
+			console.log(data)
+		})
+	})
+
+	</script>
+
+</body>
+</html>
